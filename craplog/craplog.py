@@ -777,7 +777,7 @@ search_B.grid(				row=5,	column=1,	sticky="we",				padx=3)
 search_view.grid(			row=2,	column=0,	sticky="nswe",							rowspan=8)
 
 # MAIN
-box_main.grid(				row=0,	column=1,	sticky="ns")
+box_main.grid(				row=0,	column=1,	sticky="nswe")
 ## STARTER
 button_START.grid(			row=0,	column=0,	sticky="nswe")
 ## ARGUMENTS
