@@ -12,8 +12,8 @@ It's meant to be ran daily.<br>
 <br>
 This fully Graphical version of CRAPLOG allows you to view log files too.<br>
 In the left side of the screen, you can load and view the files that CRAPLOG will use during its job.<br>
-In the right side of the screen, there are the options to use and the output of the process.<br>
-Don't like the GUI? Switch to <a href="https://github.com/elB4RTO/craplog-fullCLI">full CLI</a><br>
+In the right side of the screen, there are the options to use and the output of the process.<br><br>
+Don't like the GUI? Try the <a href="https://github.com/elB4RTO/craplog-fullCLI">full CLI</a> or the <a href="https://github.com/elB4RTO/craplog-GUIaidedCLI">GUI aided CLI</a> versions<br>
 <br>
 <br>
 <br>
