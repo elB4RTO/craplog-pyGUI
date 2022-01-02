@@ -18,14 +18,10 @@ Don't like the GUI? Switch to <a href="https://github.com/elB4RTO/craplog-fullCL
 <br>
 <br>
 <b>DEPENDENCIES</b>:<br>
-- <i>tk</i> / <i>tkinter</i><br>
-- <i>os</i><br>
-- <i>sys</i><br>
-- <i>time</i><br>
-- <i>pathlib</i><br>
-- <i>datetime</i><br>
-- <i>subprocess</i><br>
-- <i>collections</i><br>
+- <i><b>tk</b></i>   ( <i>tkinter</i> )<br>
+
+<b>OTHER DEPENDENCIES</b>:<br>
+- <i>os</i>, <i>sys</i>, <i>time</i>, <i>pathlib</i>, <i>datetime</i>, <i>subprocess</i>, <i>collections</i>
 <br>
 <br>
 <br>
