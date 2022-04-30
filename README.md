@@ -38,16 +38,11 @@ Don't like the GUI? Try the <a href="https://github.com/elB4RTO/craplog-fullCLI"
 <code>chmod +x ./craplog.py ./crappy/*.py</code><br>
 <code>./craplog.py</code><br>
 <br>
-<br>
-<br>
-<br>
 <br><hr><br>
 <br>
 <b>IMPORTANT NOTE</b>:<br>
 <br>
 Unlike the previous versions, this version of CRAPLOG will <b>automatically remove confilct files</b> during execution<br>
-<br>
-<br>
 <br>
 <br><hr><br>
 <br>
