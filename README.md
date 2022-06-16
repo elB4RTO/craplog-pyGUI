@@ -16,7 +16,7 @@ In the right side of the screen, there are the options to use and the output of 
 
 <br/>
 
-Don't like the GUI? Try the [other versions of Craplog](https://github.com/elB4RTO/CRAPLOG)
+Don't like the GUI? Try the [other versions of Craplog](https://github.com/elB4RTO/CRAPLOG#official-versions)
 
 <br/>
 
