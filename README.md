@@ -10,8 +10,7 @@ It's meant to be ran daily.
 
 ![screenshot](https://github.com/elB4RTO/craplog-pyGUI/blob/main/crapshot.png)<br/>
 
-This fully graphical version allows you to view log files too.<br/>
-In the left side of the screen, you can load and view the files that CRAPLOG will use during its job.<br/>
+In the left side of the screen, you can load and view the log files that will be used.<br/>
 In the right side of the screen, there are the options to use and the output of the process.
 
 <br/>
