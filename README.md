@@ -27,8 +27,8 @@ Don't like the GUI? Try the [other versions of Craplog](https://github.com/elB4R
 ## Usage with installation
 
 ```
-chmod +x ./install.sh
-exec ./install.sh
+chmod +x install.sh
+./install.sh
 craplog
 ```
 
@@ -43,7 +43,8 @@ python3 ./craplog.py
 
 ## Important note
 
-Unlike the previous versions, this version of CRAPLOG will **automatically remove confilct files** during execution
+Unlike the previous versions, this version will **automatically remove confilct files** during execution.<br/>
+Don't store personal stuff inside Craplog's folder.
 
 <br/>
 
