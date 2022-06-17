@@ -5,12 +5,12 @@ Parse Apache2 logs to create statistics
 
 ## Overview
 
-CRAPLOG is a tool that takes Apache2 logs in their default form, scrapes them and creates simple statistics.<br/>
+Craplog is a tool that takes Apache2 logs in their default form, scrapes them and creates simple statistics.<br/>
 It's meant to be ran daily.
 
 ![screenshot](https://github.com/elB4RTO/craplog-pyGUI/blob/main/crapshot.png)<br/>
 
-This fully Graphical version of CRAPLOG allows you to view log files too.<br/>
+This fully graphical version allows you to view log files too.<br/>
 In the left side of the screen, you can load and view the files that CRAPLOG will use during its job.<br/>
 In the right side of the screen, there are the options to use and the output of the process.
 
@@ -78,9 +78,9 @@ IP - - [DATE:TIME] "REQUEST URI" RESPONSE "FROM URL" "USER AGENT"<br/>
 <br/>
 
 #### Note
-Please notice that CRAPLOG is taking **.log.1** files as input. This is because these files (by default) are renewed every day at midnight, so they contain the full log stack of the (past) day.<br/>
+Please notice that Craplog is taking **.log.1** files as input. This is because these files (by default) are renewed every day at midnight, so they contain the full log stack of the (past) day.<br/>
 Because of that, when you run it, it will use yesterday's logs and store stat files cosequently.<br/>
-CRAPLOG is meant to be ran daily.
+Craplog is meant to be ran daily.
 
 <br/>
 
@@ -95,12 +95,12 @@ Not a default feature.
 
 ## Single-session statistics
 
-By default, CRAPLOG takes as input only the ***access.log.1*** file (unless you specify to not use it, calling the `only errors` argument, see below).
+By default, Craplog takes as input only the ***access.log.1*** file (unless you specify to not use it, calling the `only errors` argument, see below).
 
 The first time you run it, it will create a folder named *STATS*.<br/>
-Stat files will be stored inside that folder and sorted by date.<br/><br/>
+Stattistics files will be stored inside that folder and sorted by date.<br/><br/>
 
-Four **.crapstats** files will be created inside the folder named STATS:
+Four **.crapstats** files will be created inside the folder named *STATS*:
 - **IP**.*crapstats* = IPs statistics of the choosen file
 - **REQ**.*crapstats* = REQUESTs statistics of the choosen file
 - **RES**.*crapstats* = RESPONSEs statistics of the choosen file
@@ -116,11 +116,11 @@ This will create 2 additional files inside STATS folder:
 
 ## Global statistics
 
-Additionally, by default CRAPLOG updates the GLOBAL statistics inside the */STATS/GLOBALS* folder every time you run it (unless you specify to not do it, calling `avoid globals` ).
+Additionally, by default Craplog updates the **global** statistics inside the *STATS/GLOBALS* folder every time you run it (unless you specify to not do it, calling `avoid globals` ).
 
 Please notice that if you run it twice for the same log file, GLOBAL statistics will not be reliable (obviously).<br/><br/>
 
-A maximum of 6 GLOBAL files will be created inside craplog/GLOBALS/:
+A maximum of 6 files will be created inside *STATS/GLOBALS/*:
 - **GLOBAL.IP**.*crapstats* = GLOBAL IPs statistics
 - **GLOBAL.REQ**.*crapstats* = GLOBAL REQUESTs statistics
 - **GLOBAL.RES**.*crapstats* = GLOBAL RESPONSEs statistics
@@ -133,7 +133,7 @@ A maximum of 6 GLOBAL files will be created inside craplog/GLOBALS/:
 
 ## Statistics structure
 
-Statistics' structure is the same for both SESSION and GLOBALS:
+Statistics' structure is the same for both **sessions** and **globals**:
 
 { ***COUNT*** } &emsp; >>> &emsp; ***ELEMENT***<br/><br/>
 
@@ -147,7 +147,7 @@ Statistics' structure is the same for both SESSION and GLOBALS:
 ## Usage examples
 
 
-- CRAPLOG's complete functionalities: makes a clean access logs file, creates statisics of both access.log.1 and error.log.1 files, uses them to update globals and creates a backup of the original files
+- Craplog's complete functionalities: makes a clean access logs file, creates statisics of both *access.log.1* and *error.log.1* files, uses them to update globals and creates a backup of the original files
 
   `clean` `errors` `backup`<br/><br/>
 
@@ -164,7 +164,7 @@ Statistics' structure is the same for both SESSION and GLOBALS:
 <br/>
 
 #### Note
-Please notice that even usign `only globals`, normal SESSION's statistic files will be created. CRAPLOG needs session files in order to update global ones.<br/>
+Please notice that even usign `only globals`, normal session's statistic files will be created. Craplog needs session files in order to update global ones.<br/>
 After completing the job, session files will be automatically removed.
 
 <br/>
@@ -175,21 +175,22 @@ After completing the job, session files will be automatically removed.
 
 1~10 MB/s
 
-May be higher or lower depending on the complexity of your SESSION logs, the length of your GLOBALS and the power of your CPU.<br/>
-If CRAPLOG takes more than 1 minute for a 10 MB file, you've probably been tested in some way (better to check).<br/><br/>
+May be higher or lower depending on the complexity of the *logs*, the length of your *globals* and the power of your CPU.<br/>
+If it takes more than 1 minute for a 10 MB file, you've probably been tested in some way (better to check).<br/><br/>
 
 #### Global's backups
 
-CRAPLOG automatically makes backups of GLOBAL statistic files, in case of fire.<br/>
-If something goes wrong and you lose your actual GLOBAL files, you can recover them (at least the last backup).<br/>
-Move inside CRAPLOG folder, open 'STATS', open 'GLOBALS', show hidden files and open '.BACKUPS'. Here you will find the last 7 backups taken.<br/>
+Craplog automatically makes backups of global statistics files, in case of fire.<br/>
+If something goes wrong and you lose your actual global files, you can recover them (at least the last backup).<br/>
+Move inside Craplog's folder, open '**STATS**', open '**GLOBALS**', show hidden files and open '**.BACKUPS**'. Here you will find the last 7 backups taken.<br/>
 Folder named '7' is always the newest and '1' the oldest.<br/>
-A new BACKUP is made every 7th time you run CRAPLOG. If you run it once a day, it will takes backups once a week, and will keep the older one for 7 weeks.<br/><br/>
+A new backup is made every 7th time you run Craplog. If you run it once a day, it will takes backups once a week, and will keep the older one for 7 weeks.<br/><br/>
 
 #### Developement and contribution
 
-CRAPLOG is under development.<br/>
+Craplog is under development.<br/>
 If you have suggestions about how to improve it please open an issue.<br/><br/>
 
 If you're not running Apache, but you like this tool: same as before, comment (bring a sample of a log file).
+
 <br/>
